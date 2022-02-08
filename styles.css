@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Rosario:wght@300;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --headingcolor-100: rgb(27, 26, 26);
+    --textcolor-main:#736C6C;
+    --primarycolor-100: #107683;
+    --primarycolor-200:#EF8354;
+     background-color: white;
+     }
+
+ body{
+    font-family: 'Quicksand', sans-serif;
+ }
+
+ h1,h2,h3,h4,h5,h6{
+    font-family: 'Rosario', sans-serif;
+ }
+.header__wrapper{
+    background-color: var(--primarycolor-100);
+    box-shadow: 1px 1px 10px rgb(68, 67, 67);
+}
+ header{
+     display: flex;
+     color: white;
+     width: 90%;
+     /* background-color: gray; */
+     justify-content: space-between;
+     margin: 0 auto;
+     align-items: center;
+ }
+
+ img{
+    max-width: 100%;
+ }
+ 
+ 
+ #logo {
+     font-family: 'Rosario' sans-serif;
+  
+    }
+
+ .navigation{
+     display: flex;
+     display: none;
+
+ }
+
+ .navigation li{
+     list-style: none;
+     padding: 0.6rem;
+     
+ }
+
+ .navigation a{
+     text-decoration: none;
+ }
+
+ #menubar {
+    width: 2.5rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+ #menubar span{
+     width: 100%;
+     height: 0.2rem;
+     background-color: white;
+     border-radius: 3px;
+     }
+
+     /* styles for image   Default for mobile */
+     .landing-page{
+        width: 100%;
+        height: 50vh;
+        background-image: linear-gradient(60deg,rgba(16, 118, 131, 0.877), rgba(16, 118, 131, 0.247)), url("images/pexels-fauxels-3184454.jpg");
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+
+    .words{
+        width: 90%;
+        margin: auto;
+        padding: 1.5rem 0;
+    }
+    .words h1{
+        font-family: 'Rosario' sans-serif;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+          }
+
+     .words p{
+         margin: 1rem 0;
+     }
+
+     .words a{
+         display: block;
+         width:150px;
+        text-decoration: none;
+        color: white;
+        padding: 0.7rem 2rem;
+        background-color: var(--primarycolor-200);
+        border-radius: 20px;
+         }
+
+         .highlights{
+             transform: translateY(-5vh);
+             width: 80%;
+             margin: 0 auto;
+             color: white;
+             display: grid;
+             grid-template-columns: repeat(auto-fit,minmax(250px,1fr) );
+             gap:2rem;
+         }
+ 
+         .sections{
+            background-color: var(--primarycolor-100);
+            box-shadow: 0px 10px 35px rgba(0,0,0,0.3);
+            border-radius: 2rem;
+            /* display: flex; */
+            padding: 1rem;
+            gap: 1rem;
+        }   
+
+        .try{
+            align-items: center;
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sections p{
+
+        }
+
+
+        .sections div{
+            flex-grow: 2;
+            font-size: clamp(1rem, 1.7vw, 2rem); 
+        }
+
+        .sections .icons{
+            align-self:center;
+        }
+
+        .sections h2{
+            font-family: 'Rosario' sans-serif;
+            /* font-size: 1.2rem; */
+            margin-bottom: 1rem;
+        }
+
+        .statements{
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 4rem;
+            margin: 0 auto;
+        }
+
+       
+        .statements h2{
+            color: var(--headingcolor-100);
+             text-align: center;
+             text-decoration: underline;
+             margin:0.5rem;
+             font-size: 2rem;
+        }
+
+        .statements p{
+            color: var(--textcolor-main);
+        }
+        .statements img{
+            display: none;
+        }
+
+        .offers{
+            width: 80%;
+            margin: 2rem auto;
+        }
+
+        .offer-text{
+            text-align: center;
+        }
+
+        .offer-text h2{
+            color: var(--headingcolor-100);
+            text-decoration: underline;
+            font-size: 2rem;
+        }
+
+        .offer-text p{
+            color: var(--textcolor-main);
+        }
+
+
+        @media (min-width: 800px){
+
+            .header{
+                width:70%
+            }
+            .navigation{
+                display: flex;
+            }
+
+            #menubar{
+                display: none;
+            }
+
+            .words{
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            .words h1{
+                font-size: 3.5rem;
+            }
+        }
