@@ -193,12 +193,13 @@ html{
            
             width: 80%;
             margin: 2rem auto;
-            padding: 30px;
+            padding: 5rem;
         }
         .offer-list{
             margin-top: 2rem;
             display: grid;
             gap: 2rem;
+            margin-left: 1rem;
         }
         .offer-text{
             text-align: center;
@@ -213,13 +214,14 @@ html{
 
         .offer-text p{
             color: var(--textcolor-main);
-            margin: 0 auto;
+            margin: 1rem auto;
         }
 
        .list{
            display:flex;
-           margin-bottom: 20px;
+           margin: 1rem 0;
            justify-self: center;
+         
        }
 
        .list img{
@@ -229,43 +231,65 @@ html{
        }
        .list-words p{
             margin-top: 10px; 
-           
-       }
+             }
+
+            .popular-works{
+                margin:  7rem auto;
+                width:80%;
+
+            }
+            .popular-heading{
+                text-align: center;
+            }
+
+            .popular-heading p{
+            
+            }
+
        
 
 
 
 
-        @media (min-width: 800px){
+   @media screen and (min-width: 800px) {
+     
+    .navigation {
+        display: flex
+    }
+    
 
-            .navigation{
-                display: flex;
-            }
+    #menubar{
+        display: none;
+    }
 
-            #menubar{
-                display: none;
-            }
+    .words h1{
+        width: 30ch;
+        font-size: 3rem;
+          }
 
-            .words h1{
-                width: 30ch;
-                font-size: 3rem;
-                  }
-
-                  .statements{
-                    grid-template-columns: repeat(2,1fr);  
-                }
-
-                .statements img{
-                    display: block;
-                }
-
-                .offer-list{
-                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                }
-
-            .offer-text p {
-              width: 45%;
-            }
-
-
+          .statements{
+            grid-template-columns: repeat(2,1fr);  
         }
+
+        .statements img{
+            display: block;
+        }
+
+        .offer-list{
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+    .offer-text p {
+      width: 45%;
+    }
+
+    .popular-heading p{
+           width: 50ch;
+           margin: 0 auto;
+    }
+
+}
+
+            
+
+        
