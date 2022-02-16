@@ -172,7 +172,7 @@ html{
             color: var(--headingcolor-100);
              text-align: center;
              text-decoration: underline;
-            padding: 1rem;
+            padding: 2rem;
              font-size: 2rem;
         }
 
@@ -190,30 +190,25 @@ html{
             margin-top: 7rem;
         }
         .offers{
-           
-            width: 80%;
+            width: 100%;
             margin: 2rem auto;
-            padding: 5rem;
+            padding: 3rem;
+        }
+        .offer-text{
+            width: 100%;
+         background-color: black;
+         text-align: center;
         }
         .offer-list{
             margin-top: 2rem;
             display: grid;
-            gap: 2rem;
-            margin-left: 1rem;
-        }
-        .offer-text{
            
-            text-align: center;
-            
-            
         }
+     
 
         .offer-text h2{
-            width: 100%;
             color: var(--headingcolor-100);
-            text-align: center;
             text-decoration: underline;
-           padding: 1rem;
             font-size: 2rem;
            
         }
@@ -221,7 +216,6 @@ html{
         .offer-text p{
             color: var(--textcolor-main);
             margin: 1rem auto;
-            width: 100%;
         }
 
        .list{
@@ -249,22 +243,7 @@ html{
                 width:80%;
 
             }
-            .popular-heading{
-                text-align: center;
-                margin: 2rem;
-            }
-
-            .popular-heading h2{
-                margin: 1rem 0;
-                color: var(--headingcolor-100);
-                text-decoration: underline;
-                font-size: 2rem;
-            }
-
-            .popular-heading p{
-                color: var(--textcolor-main);
-                width: 70ch;
-            }
+            
 
        
 
@@ -298,16 +277,15 @@ html{
         .offer-list{
             /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
             grid-template-columns: repeat(2,1fr);
+            gap: 2rem;
+            margin-left: 1rem;
         }
 
     .offer-text p {
       width: 60%;
     }
 
-    .popular-heading p{
-           width: 50ch;
-           margin: 0 auto;
-    }
+  
 
 }
 
