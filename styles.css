@@ -172,7 +172,7 @@ html{
             color: var(--headingcolor-100);
              text-align: center;
              text-decoration: underline;
-             /* margin:0.5rem; */
+            padding: 1rem;
              font-size: 2rem;
         }
 
@@ -202,19 +202,26 @@ html{
             margin-left: 1rem;
         }
         .offer-text{
+           
             text-align: center;
+            
             
         }
 
         .offer-text h2{
+            width: 100%;
             color: var(--headingcolor-100);
+            text-align: center;
             text-decoration: underline;
+           padding: 1rem;
             font-size: 2rem;
+           
         }
 
         .offer-text p{
             color: var(--textcolor-main);
             margin: 1rem auto;
+            width: 100%;
         }
 
        .list{
@@ -229,6 +236,10 @@ html{
            height: 30px;
            margin-right: 20px;
        }
+
+       .list-words h3{
+           color: var(--headingcolor-100);
+       }
        .list-words p{
             margin-top: 10px; 
              }
@@ -240,10 +251,19 @@ html{
             }
             .popular-heading{
                 text-align: center;
+                margin: 2rem;
+            }
+
+            .popular-heading h2{
+                margin: 1rem 0;
+                color: var(--headingcolor-100);
+                text-decoration: underline;
+                font-size: 2rem;
             }
 
             .popular-heading p{
-            
+                color: var(--textcolor-main);
+                width: 70ch;
             }
 
        
@@ -276,11 +296,12 @@ html{
         }
 
         .offer-list{
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+            grid-template-columns: repeat(2,1fr);
         }
 
     .offer-text p {
-      width: 45%;
+      width: 60%;
     }
 
     .popular-heading p{
