@@ -195,8 +195,7 @@ html{
             padding: 3rem;
         }
         .offer-text{
-            width: 100%;
-         background-color: black;
+        width: 100%;
          text-align: center;
         }
         .offer-list{
@@ -238,17 +237,53 @@ html{
             margin-top: 10px; 
              }
 
-            .popular-works{
-                margin:  7rem auto;
-                width:80%;
+      .popular-works{
+             margin:  7rem auto;
+             width:80%;
 
-            }
-            
+       }
 
-       
+       .popular-heading{
+        width: 100%;
+        text-align: center;
+       }
 
+       .popular-heading h2{
+        color: var(--headingcolor-100);
+        text-decoration: underline;
+        font-size: 2rem;
+       }
 
+       .popular-heading p{
+        color: var(--textcolor-main);
+        margin: 1rem auto;
+       }
 
+       .work-cards{
+           width:100%;
+           background-color: tomato;
+       }
+
+       .cards{
+           width:70%;
+           margin: 2rem auto;
+           height: fit-content;
+           border-radius: 10px;
+           box-shadow: 1px 1px 5px rgb(207, 200, 200);
+           overflow: hidden;
+       }
+
+        .cards img{
+           width:100% ;
+           height:300px;
+          object-fit:cover;
+       } 
+
+       .cards p{
+           padding:0.5rem;
+           background-color: #107683;
+           color: white;
+       }
 
    @media screen and (min-width: 800px) {
      
@@ -277,17 +312,44 @@ html{
         .offer-list{
             /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
             grid-template-columns: repeat(2,1fr);
-            gap: 2rem;
-            margin-left: 1rem;
+             gap: 2rem; 
+            /* margin-left: 1rem;  */
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .offer-list p{
+            width: 40ch;
         }
 
     .offer-text p {
-      width: 60%;
+      width: 50ch;
     }
 
-  
+    .popular-heading p{
+       width: 60ch;
+       }
+
+       .work-cards{
+           
+           width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+       }
+
+       .cards{
+           width: 90%;
+           
+       }
+       
+    /* .hide-cards{
+        display: block;
+    } */
 
 }
+
+
+
 
             
 
